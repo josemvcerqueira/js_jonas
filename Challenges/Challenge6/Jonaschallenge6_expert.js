@@ -34,9 +34,10 @@
 	let questionTwo = new Game_questions( `What is the name of the coolest JS instructor?`, [ `John`, `Michael`, `Jonas` ], `2` );
 
 	let questionThree = new Game_questions( `How to best describes coding?`, [ `Boring`, `Superfun!`, `Hard`, `Useless` ], `1` );
+	
+	let arr = [ questionOne, questionTwo, questionThree ];
 
 	function startGame() {
-		let arr = [ questionOne, questionTwo, questionThree ];
 		random = Math.floor( Math.random() * 3 );
 		return arr[ random ].correct();
 	}
