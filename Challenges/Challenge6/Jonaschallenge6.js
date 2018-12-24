@@ -26,7 +26,7 @@
 
 	function startGame() {
 		let arr = [ questionOne, questionTwo, questionThree ];
-		random = Math.floor( Math.random() * 3 );
+		random = Math.floor( Math.random() * arr.length );
 		return arr[ random ].correct();
 	}
 	startGame();
